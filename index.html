@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dice Roll</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="min-h-screen flex flex-col items-center justify-center gap-4 bg-[#0f172a] text-white font-sans"
+  >
+    <div class="bg-[#1e293b] p-6 rounded-md w-[600px]">
+      <h1 class="font-bold text-2xl text-center">Dice Roll Simulator</h1>
+      <div id="dice" class="text-9xl text-center -mt-4">&#9860</div>
+      <button id="roll-dice" type="button" class="flex mx-auto bg-indigo-500 hover:bg-indigo-600 py-1 px-3 rounded-lg mt-3 cursor-pointer">
+        Roll Dice
+      </button>
+    
+      <ul id="roll-history" class="flex flex-col items-center w-[80%] mx-auto bg-gray-600 mt-10 p-2 rounded-lg">
+        <li class="flex w-[50%] rounded-lg bg-gray-700 my-2 p-2">Roll 1: <span>&#9856</span></li>
+        <li class="flex w-[50%] rounded-lg bg-gray-700 my-2 p-2">Roll 2: <span>&#9857</span></li>
+      </ul>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
